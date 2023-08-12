@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                    <li class="fas fa-times" onclick="closemenu()"></li>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h3 id="header-hello"><span id="hello-color">H</span><span id="ello-color">ello</span></h3>
+                <h2>I'm <span class="multiText"></span></h2>
+                <p><span id="header-name"> TOP BAHADUR PUN <br> <span id="header-name2">From Baglung,
+                            Nepal</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------about----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpeg" alt="image">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title about-subtitle">About Me</h1>
+                    <p id="title-para">"My name is <span style="color: #fedf1a; font-size: 15px;">TOP BAHADUR PUN</span>
+                        I have completed my Bachelor of Technology in Computer Science from the Lords Institute of
+                        Engineering and Technology, Hyderabad, Telangana, India. I am a dynamic and competent
+                        professional with extensive exposure to MySql Database, possessing good experience in Python
+                        and front-end web development skills. Additionally, I am familiar with Python libraries like
+                        NumPy and Pandas. Moreover, I have a basic understanding of Linux and Google Cloud Platforms.
+                        <br><br>
+                        I am conceptually strong and possess an analytical and innovative approach toward work.
+                        Furthermore, I can quickly learn new concepts and technologies. I have leadership potential and
+                        can provide direction, motivation, and foster a culture with high standards of ethics and
+                        professionalism."
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend</span><br>Designing Web Application</li>
+                            <li><span>Backend</span><br>Integration with API</li>
+                            <li><span>GCP</span><br>Deploying a Application</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Web Application Developer</li>
+                            <li><span>2021 - Current</span><br>Python Developer</li>
+                            <li><span>2021 - Current</span><br>Deploying a Web Application to the Google cloud Platform
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>B.Tech - Lords Institute of Engineering and Technology, Hyderabad,
+                                TS</li>
+                            <li><span>2016</span><br>Intermediate - Bhargavi Jr College, Warangal, TS</li>
+                            <li><span>2014</span><br>SSC - Bharateeya Vidya Kendra High School, Warangal, TS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------services---------------------- -->
+    <div class="services" id="service">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI Development</h2>
+                    <p>
+                        Performing validation and verification testing, collaborating with customers to fix and improve
+                        products, documenting development phases, and monitoring systems, and also ensuring that the
+                        software is up-to-date with the latest technologies.
+
+                        The focus lies in ensuring high performance on both mobile and desktop devices, providing a
+                        seamless and efficient user experience across various platforms.
+                        To facilitate future updates and enhancements and diligently document all changes made in the
+                        code.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Fullstack Development</h2>
+                    <p>With development experience in writing good, clean, testable Python code designing and developing
+                        robust, scalable, and secure web applications using Python and Django
+                        frameworks. Additionally creating and maintaining efficient database schemas, queries, and APIs
+                        to support the application functionality. Furthermore, troubleshoot and debug application
+                        issues, demonstrating my ability to identify and resolve problems effectively.</p>
+                    <!-- <a href="#">Learn more</a> -->
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Mobile App Development</h2>
+                    <p>As a developer, I have extensive experience in developing and implementing highly responsive user
+                        interface components using React Native. Creating and implementing front-end architecture that
+                        supports user interface concepts, leading to a seamless user experience. Proactively monitor and
+                        improve front-end performance to optimize the application's responsiveness and speed. Maintain
+                        comprehensive documentation of application changes and develop updates to keep the software
+                        up-to-date and well-maintained.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------portfolio-------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="#">
+                    <div class="layer">
+                        <h3>Web App</h3>
+                        <p>"As a developer, my expertise lies in crafting high-quality software designs and architectures that harmoniously align with both 
+                            user needs and the overarching goals of system functionality.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="#">
+                    <div class="layer">
+                        <h3>Mobile App</h3>
+                        <p>"As a developer, my expertise lies in crafting high-quality software designs and architectures that harmoniously align with both 
+                            user needs and the overarching goals of system functionality."</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="#">
+                    <div class="layer">
+                        <h3>Desktop App</h3>
+                        <p>"As a developer, my expertise lies in crafting high-quality software designs and architectures that harmoniously align with both
+                             user needs and the overarching goals of system functionality."</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------contact---------------------- -->
+    <div class="contact" id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>topbahadurpun.seo@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-8801XX9011</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/topbahadurpun/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/topbahadur_pun"><i class="fa-brands fa-twitter"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/resume.pdf" download class="btn1">Donwload My Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>Designed By Top Bahadur Pun <i class="fa-regular fa-copyright"></i> 2023 All Rights Reserved.</p>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+       <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-150px";
+        }
+        
+    </script> 
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+     <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-300px";
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-400px";
+        }
+        
+    </script> 
+
+  
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw7SGK2cgH6-te891_u_oKFpL8-eYY291RJHVOcNqKrXhRWZ9wLlJqw4lJ2SBbp6Gk/exec'
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message send successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script>
+        var typingEffect = new Typed(".multiText", {
+            strings: ["Developer", "Programmer", "Tester", "Blogger"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500
+        })
+    </script>
+</body>
+
+</html>

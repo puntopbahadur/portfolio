@@ -1,0 +1,533 @@
+@media only screen and (max-width:991px) {
+    .container {
+        padding: 5px 5%;
+    
+    }
+
+    #header {
+        background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/bg991px.jpeg);
+        width: 100vw;
+        height: 100vh;
+
+    }
+    #header-name {
+        font-size:40px;
+        font-weight: bold;
+    }
+
+    #header-name2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .header-text h2 {
+        font-size: 35px;
+
+    }
+
+    .multiText {
+        font-size: 45px;
+    }
+
+
+    .header-text {
+        margin-top: 20%;
+        margin-left: 18px;
+    }
+    #hello-color{
+        font-size:55px ;
+    }
+    nav ul li a:hover::after {
+        width:50%;
+    }
+
+    nav ul li a {
+        font-size: 25px;
+        display: block;
+
+    }
+
+    .sub-title {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .btn2 {
+        padding: 16px 34px;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .services-list {
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+
+    .work-list {
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 35px;
+    }
+
+    nav ul {
+        background: #252525;
+        position: fixed;
+        top: 0;
+        right: -400px;
+        width: 400px;
+        height: 100vh;
+        padding-top: 80px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 30px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        cursor: pointer;
+        font-weight:900;
+    }
+
+    nav ul li a {
+        font-size: 35px;
+
+    }
+
+    .social-icons a {
+        font-size: 50px;
+    }
+}
+
+/* media screen at below 769px */
+
+@media only screen and (max-width:769px) {
+
+    .container {
+        padding: 10px 10%;
+    }
+    .logo {
+        width: 140px;
+        height: 80px;
+    }
+
+    #header {
+        background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/phone-bg.jpeg);
+        width: 100vw;
+        height: 100vh;
+
+    }
+    #header-name {
+        font-size:40px;
+        font-weight: bold;
+    }
+
+    #header-name2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .header-text h2 {
+        font-size: 40px;
+     }
+     .header-text h3 {
+        font-size: 45px;
+     }
+
+    .multiText {
+        font-size: 40px;
+    }
+    #header-hello{
+        font-size: 40px;
+    }
+    #hello-color{
+        font-size:50px ;
+    }
+
+    .container {
+
+        padding: 4px 2%;
+    }
+
+    .header-text {
+        margin-top: 60%;
+        margin-left: 18px;
+    }
+
+    nav .fas {
+        font-size: 35px;
+    }
+
+    nav ul {
+   
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        padding-top: 70px;
+    }
+
+    nav ul li {
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 5px;
+        left: 4px;
+        cursor: pointer;
+    }
+
+    nav ul li a {
+        font-size:20px;
+
+        
+    }
+    nav ul li a:hover::after {
+        width:35%;
+    }
+
+    .multiText{
+        font-size:3rem;
+    }
+
+    .services-list {
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+    .about-col-1 {
+        margin-top: 60px;
+    }
+    #about {
+        margin-top: 20px;
+
+    }
+    .services-list {
+        margin-top: 15px;
+    }
+    .work-list{
+        margin-top: 15px;
+    }
+    .contact{
+        margin-top: 15px;
+    }
+
+    .work-list {
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+
+    .sub-title {
+        font-size: 40px;
+        text-align: center;
+        margin-block: 15px 0;
+    }
+
+    .btn1 {
+        text-align: center;
+        padding: 16px 50px;
+        font-weight: bolder;
+        width: 100%;
+    }
+
+    form .btn2 {
+        margin: 15px auto;
+        width: 100%;
+    }
+}
+
+
+/* media screen at below 479px */
+
+@media only screen and (max-width:479px) {
+    #header {
+        background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),  url(images/phone-bg.jpeg);
+
+    }
+    .logo {
+        width:120px;
+        height: 70px;
+    }
+    .header-text {
+        margin-top: 60%;
+        margin-left: 18px;
+       
+    }
+
+    #header-hello {
+        font-size: 25px;
+    }
+
+    #header-hello::after {
+        position: absolute;
+        content: '';
+        height: 3px;
+        width: 35px;
+        bottom: 3px;
+
+    }
+
+    #header-name {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #header-name2 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .header-text h2 {
+        font-size: 25px;
+
+    }
+    #hello-color{
+        font-size:35px ;
+    }
+
+    .multiText {
+        font-size: 30px;
+    }
+    
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #252525;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+
+    nav ul .fas {
+        position: absolute;
+        top: 5px;
+        left: 4px;
+        cursor: pointer;
+    }
+
+
+    nav ul li a {
+        font-size:16px;
+
+    }
+    nav ul li a:hover::after {
+        width:50%;
+    }
+
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;
+
+    }
+
+    .about-col-1 img {
+        width: 100%;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+
+
+    }
+    #portfolio{
+        margin-top: 5px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 30px;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+    .about-col-1 {
+        margin-top: 15px;
+    }
+    #about {
+        margin-top: 10px;
+
+    }
+    .services-list {
+        margin-top: 10px;
+    }
+    .work-list{
+        margin-top: 10px;
+    }
+    .contact{
+        margin-top: 10px;
+    }
+
+    form .btn2 {
+        margin: 15px auto;
+        width: 100%;
+    }
+
+
+    #footer {
+        font-size: 14px;
+        width: 100%;
+    }
+    .social-icons a {
+        font-size: 35px;
+    }
+}
+
+/* galaxy fold */
+@media only screen and (max-width:281px) {
+    #header {
+        background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/phone-bg.jpeg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    .logo {
+        width: 90px;
+        height: 40px;
+    }
+    .container {
+        padding: 3px 3%;
+    
+    }
+    .header-text {
+        margin-top: 80%;
+        margin-left: 18px;
+       
+    }
+
+    #header-hello {
+        font-size: 20px;
+    }
+    .header-text h2{
+        font-size: 16px;
+    }
+    #hello-color{
+        font-size: 25px;
+    }
+    #ello-color{
+        font-size: 20px;
+    }
+    #header-name{
+        font-size: 15px;
+    }
+    #header-name2{
+   font-size: 13px;
+    }
+    .multiText {
+        font-size: 20px;
+    }
+    nav .fas {
+        font-size: 20px;
+    }
+    #sidemenu li a{
+        font-size: 14px;
+    }
+    nav ul {
+     
+        right: -150px;
+        width: 150px;
+     
+    }
+    .sub-title{
+        font-size: 30px;
+    }
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100vw;
+
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;
+
+    }
+
+    .about-col-1 img {
+        width: 100vw;
+    }
+    #title-para{
+       margin: 0 3px 0 0;
+    }
+    .work img {
+        width: 100vw;
+        height: 100%;
+    }
+    .layer p {
+
+        font-size: 14px;
+    
+    }
+    
+    .layer a {
+        font-size: 30px;
+       
+    
+    }
+    .layer h3 {
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .btn1 {
+
+        padding: 10px 12px;
+       font-size: 15px;
+        width: 100%;
+    }
+    #footer {
+        font-size: 12px;
+        width: 100%;
+    }
+    .social-icons a {
+        font-size:30px;
+    }
+    form .btn2 {
+        padding: 12px auto;
+        width: 100%;
+        font-size: 15px;
+    }
+    .fa-solid .fa-regular{
+        font-size:12px ;
+    }
+   
+}
+
+
+   
