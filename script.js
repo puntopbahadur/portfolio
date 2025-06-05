@@ -1,6 +1,6 @@
 // ------------Typing Effect--------------------
 var typingEffect = new Typed(".multiText", {
-    strings: ["AI Enthusiast", "Data Analyst", "UI Developer", "Automation Engineer"],
+    strings: ["AI Enthusiast", "Automation Engineer", "Frontend Developer"],
     loop: true,
     typeSpeed: 100,
     backSpeed: 80,

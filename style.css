@@ -40,7 +40,7 @@ h3 {
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     color: var(--secondary-text-color);
     line-height: 1.8rem;
@@ -108,7 +108,7 @@ ul {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #dbcdc594;
+    background-color: #fafafa;
 
 }
 
@@ -174,10 +174,6 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.about-col-2 p {
-    text-align: justify;
 }
 
 .tab-titles {
@@ -254,10 +250,10 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: flex-start;
 }
-.learnings-desc p{
+/* .learnings-desc p{
     
    text-align: justify;
-}
+} */
 #second-big-learnings{
     flex-direction: row-reverse;
 }
@@ -271,9 +267,9 @@ nav ul li a:hover {
 .work{
     margin-top: 2rem;
 }
-.cert{
+/* .cert{
     text-align: justify;
-}
+} */
 .featured-title{
     text-align: center;
 }
