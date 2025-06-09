@@ -205,14 +205,15 @@
     .submit-btn{
         width: 40%
     }
-    .social{
-        font-size:22px;
+     footer {
+        margin-top: 1rem;
+        padding: 15px;
     }
-    footer{
-        margin-top:1rem;
-    }
+
+    .social li {
+        margin: 0 5px;
 
 }
-
+}
 
 

@@ -248,10 +248,7 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: flex-start;
 }
-/* .learnings-desc p{
-    
-   text-align: justify;
-} */
+
 #second-big-learnings{
     flex-direction: row-reverse;
 }
@@ -265,9 +262,7 @@ nav ul li a:hover {
 .work{
     margin-top: 2rem;
 }
-/* .cert{
-    text-align: justify;
-} */
+
 .featured-title{
     text-align: center;
 }
@@ -355,7 +350,7 @@ form textarea {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #ececec;
+    background-color: #fafafa;
     margin-top: 3rem;
 }
 
@@ -365,22 +360,18 @@ footer {
     justify-content: center;
     padding: 0;
     font-size: 1.5rem;
-
 }
+
 .social i {
-color: var(--accent-color);
-
+    color: var(--accent-color);
+    transition: 0.5s; /* move this here for smoother animation */
 }
-.social :hover {
+
+.social a:hover i {
     color: var(--accent-color-dark);
     transform: translateY(-5px);
-    transition: 0.5s;
 }
 
 .social li {
     margin: 0 10px;
 }
-
-
-
-
