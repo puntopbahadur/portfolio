@@ -103,20 +103,26 @@ ul {
 .sub-title {
     font-family: 'Bricolage Grotesque', sans-serif;
 }
-/* <!-- -------------nav-bar--------------- --> */
+/* */
 
 header {
     text-align: center;
     padding: 20px;
     background-color: #fafafa;
+}
 
+nav {
+    position: relative; /* Needed for absolute positioning of menu icon */
+    display: flex;
+    justify-content: center; /* Center the nav links by default */
+    padding: 10px;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center; 
-    padding: 10px;
+    display: flex; /* Display as flex for horizontal layout on large screens */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
 }
 
 nav ul li {
@@ -136,6 +142,19 @@ nav ul li a:hover {
     font-weight:600;
     transition: 0.5s;
 }
+
+/* Hamburger menu icon - hidden by default */
+#menu-icon {
+    display: none; /* Hidden on larger screens */
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--primary-text-color);
+    position: absolute; /* Position relative to nav */
+    right: var(--padding-inline-section); /* Align to the right */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+}
+
 
 .profile {
     max-width: 600px;
@@ -163,7 +182,7 @@ nav ul li a:hover {
     color: var(--accent-color);
 }
 
-/* <!-- -----------------about section------------------- --> */
+/* */
 #about {
     margin-top:3rem;
 }
@@ -275,11 +294,13 @@ nav ul li a:hover {
 }
 
 .work img {
-    width: 50%; 
+    width: 100%; /* Make images fill their container */
+    max-width: 600px; /* Limit max width for larger screens */
     height: auto; 
     border-radius: 5px;
     object-fit: cover;
-    max-width: 50%; 
+    display: block; /* Ensures proper centering with margin auto */
+    margin: 0 auto 15px auto; /* Center image and add some bottom margin */
 }
 
 /*--------------------contact section----------------*/

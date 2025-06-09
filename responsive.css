@@ -1,219 +1,238 @@
-
-@media (min-width: 1024px) and (max-width: 1366px) {
-    .root{
-        --padding-inline-section:5px;
-      }
+/* media query max-width:1024px */
+@media (max-width: 1024px) {
+    :root {
+        --padding-inline-section: 15px;
     }
-
-/* media query max-width:991px */
-@media only screen and (max-width : 991px) {
-
-    .logo img {
-        width: 80px;
-        height: auto;
-    }
-
-    .big-learnings-container, #second-big-learnings{
-        flex-direction: column;
-    }
-
-    #about {
-        margin-top:1rem;
-    }
-    .about-col-1,
-    .about-col-2 {
-        flex-basis: 100%;
+    nav ul {
+        justify-content: space-around; /* Distribute navigation items more evenly */
     }
     nav ul li {
-        display: none;
-    
+        margin-right: 10px; /* Reduce margin between nav items */
+    }
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    p{
+        text-align: left;
+    }
+    .multiText {
+        font-size: 1.8rem;
+    }
+    .tab-links {
+        margin-right: 30px;
+        font-size: 18px;
+    }
+    .big-learnings-container {
+        flex-direction: column; /* Stack project sections vertically */
+    }
+    #second-big-learnings {
+        flex-direction: column; /* Ensure reversed order also stacks vertically */
+    }
+    .learnings-desc {
+        text-align: center;
+        align-items: center;
+    }
+    .work img {
+        max-width: 550px; /* Adjust max-width for certifications on tablets */
+    }
+    .footer-txt{
+        text-align: center;
     }
 }
 
 /* media query max-width:768px */
-@media only screen and (max-width : 768px) {
+@media (max-width: 768px) {
+    :root {
+        --padding-inline-section: 10px;
+    }
     .primary-button {
-        width: 100%;
+        width: auto; /* Allow button to size based on content */
+        padding: 10px 20px;
+        font-size: 16px;
     }
-    .logo img {
-        width: 60px;
-        height: auto;
-    }
-
     h1 {
         font-size: 2rem;
     }
-    nav ul li {
-        display: none;
+    h2 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 1rem;
     
     }
-    .hover-link {
-
-        font-size: 20px;
-        font-weight: 400;
-        padding: 8px;
+    /* Hide desktop nav and show hamburger */
+    nav ul {
+        display: none; /* Hide default nav items */
+    }
+    #menu-icon {
+        display: block; /* Show hamburger icon */
     }
 
-    .hover-link::after {
-        height: 2px;
-        top: 80%;
-        left: 0;
- }
- .header-section{
-    flex-direction: column-reverse;
-    gap: 5px;
- }
- .header-left{
-    max-width: 100vw;
-    text-align: center;
-}
-.multiText{
-    font-size: 24px;
-}
-.tab-links {
-    margin-right: 20px;  
-}
-
-.tab-links.active-link::after {
-    width: 50%; 
-}
-
-.tab-titles {
-    justify-content: space-evenly; 
-}
-
-.tab-contents ul li span {
-    font-size: 18px;
-}
-.big-learnings-container, #second-big-learnings{
-    flex-direction: column;
-}
-
-    .tab-links::after{
-        bottom: -5px;
+    /* Style for active mobile nav (when dropdown is open) */
+    nav ul.nav-links-active {
+        display: flex; /* Show nav items */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute;
+        top: 100%; /* Position below the nav bar */
+        right: 0;
+        background-color: #fafafa; /* Match header background */
+        width: 100%;
+        padding: 20px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 100; /* Ensure it's above other content */
     }
 
-    .about-subtitle {
+    nav ul.nav-links-active li {
+        margin: 10px 0; /* Add vertical spacing */
         text-align: center;
     }
-    .primary-button{
-        width: 80%; 
-        font-weight: 600;
-        padding: 10px 22px;
+    nav ul.nav-links-active li a {
+        font-size: 1.2rem;
+        padding: 5px 0;
+        display: block; /* Make link fill the list item for better tap area */
     }
-    .submit-btn{
-        width: 60%
-    }
-    .featured-works {
-        margin: 2.5rem auto;
-        padding: 2px;
-    }
-    .contact-title{
-        text-align: center;
-    }
-    .contact-left p i {
-        font-size: 24px;
-    }
-    .social{
-        font-size:24px;
-    }
-    
- .featured-works {
-    margin: 10px;
-}
 
- .work {
-    margin-bottom: 12px;
-    
-} 
-}
-/* media query max-width:480px */
-
-@media only screen and (max-width:480px) {
-        .root{
-            --padding-inline-section:10px;
-          }
-          header{
-            padding: 5px var(--padding-inline-section) 0;
-        }
-        .sub-title{
-            font-size: 30px;
-        }
-  h1 {
-      font-size: 16px;
-  }
-  
-  h2 {
-      font-size: 16px;
-  }
-  h3{
-    font-size:14px;
-  }
-  p{
-      font-size: 14px;
-  }
-  .primary-button{
-    width: 80%; 
-    font-size: 16px;
-    font-weight: 400;
-    padding: 8px 18px;
-
-}
-.work img {
-    width: 100%; 
-    max-width: 100%; 
-}
-.work{
-    margin-top: 1rem;
-}
-.submit-btn{
-    width: 40%
-}
-.multiText{
-    font-size: 20px;
-}
-.title-name{
- font-size: 22px;
-}
-   .logo img {
-        width: 50px;
-        height: auto;
+    .profile {
+        padding: 10px;
+    }
+    .profile-pic {
+        width: 160px;
+        height: 160px;
+    }
+    .title-name {
+        font-size: 2rem;
+    }
+    .multiText {
+        font-size: 1.5rem;
+    }
+    .download-resume-btn {
+        width: 70%; /* Make button more responsive */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-row {
+        flex-direction: column;
+    }
+    .about-col-2 {
+        flex-basis: 100%;
+        text-align: center; /* Center about me content */
+    }
+    .tab-titles {
+        justify-content: center; /* Center skill tabs */
+        margin: 20px 0;
     }
     .tab-links {
-        font-size: 14px; 
-        margin-right: 10px; 
+        margin-right: 20px;
+        font-size: 16px;
+    }
+    .tab-links::after {
+        bottom: -5px;
     }
     .tab-contents ul li {
-        font-size: 14px; 
+        text-align: left; /* Keep list items left-aligned */
+        padding-left: 20px; /* Add some padding for readability */
     }
+    .learnings-desc h2 {
+        font-size: 1.5rem;
+    }
+    .learnings-desc p {
+        font-size: 0.9rem;
+    }
+    .featured-works {
+        margin: 20px auto;
+        padding: 5px;
+    }
+    .work img {
+        max-width: 450px; /* Further adjust max-width for certifications */
+    }
+    .contact-left, .contact-right {
+        text-align: center;
+    }
+    .contact-left p {
+        margin-top: 1rem;
+    }
+    .submit-btn {
+        width: 50%; /* Make submit button more responsive */
+    }
+    footer p {
+        font-size: 0.9rem;
+    }
+}
 
+/* media query max-width:480px */
+@media (max-width: 480px) {
+    :root {
+        --padding-inline-section: 10px;
+    }
+    header {
+        padding: 10px var(--padding-inline-section) 0;
+    }
+    .sub-title {
+        font-size: 24px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .primary-button {
+        width: 90%;
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    .profile-pic {
+        width: 140px;
+        height: 140px;
+    }
+    .title-name {
+        font-size: 1.8rem;
+    }
+    .multiText {
+        font-size: 1.2rem;
+    }
+    /* Mobile nav adjustments */
+    nav ul.nav-links-active li {
+        margin-bottom: 8px;
+    }
+    nav ul.nav-links-active li a {
+        font-size: 1rem;
+    }
+    .tab-links {
+        font-size: 14px;
+        margin-right: 15px;
+    }
+    .tab-contents ul li {
+        font-size: 0.9rem;
+    }
     .tab-contents ul li span {
-        font-size: 14px; 
+        font-size: 0.9rem;
     }
     #about {
-        margin-top:10px;
-    }
-    .big-learnings-section{
-        padding: 0px 10px 0;
-    }
-   .contact {
         margin-top: 1rem;
     }
-    .contact-left p i {
-        font-size: 22px;
+    .big-learnings-section {
+        padding: 15px var(--padding-inline-section) 0;
     }
-    .submit-btn{
-        width: 40%
+    .work img {
+        max-width: 400px; /* Adjust max-width for certifications on mobile */
     }
-     footer {
-        margin-top: 1rem;
-        padding: 15px;
+    .submit-btn {
+        width: 60%;
+        padding: 8px 15px;
+        font-size: 16px;
     }
-
     .social li {
-        margin: 0 5px;
-
+        margin: 0 8px;
+    }
 }
-}
-
-
